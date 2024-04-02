@@ -2,6 +2,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: black;
+    color: white;
 }
 
 nav {
@@ -12,15 +18,16 @@ nav {
 }
 
 .logo-netflix {
-    height: 100px;
+    height: 70px;
+    width: 170px;
 }
 
 .netflix-bg {
     position: relative;
     width: 100%;
     height: 70vh;
+    background-size: auto;
     background-image: url('./img/fundo-netflix.jpg');
-    background-size: cover;
     background-position: center;
 }
 
@@ -42,6 +49,10 @@ nav {
 
 .select-idioma:focus {
     border-width: 3px;
+    img {
+        color: white;
+        height: 20px;
+    }
 }
 
 .entrar-botao {
@@ -50,4 +61,98 @@ nav {
     background-color: red;
     color: white;
     border-radius: 5px;
+}
+
+.container {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-login {
+    background-color: rgb(219, 0, 0);
+    color: white;
+    border-radius: 5px;
+    height: 3em;
+    width: 10em;
+    font-weight: bolder;
+}
+
+.login-email {
+    background-color: transparent;
+    height: 3em;
+    width: 25em;
+    padding-left: 20px;
+}
+
+.title-container {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.faixa-assinatura {
+    width: 93%;
+    height: 140px;
+    background: radial-gradient(circle, rgb(97, 6, 44)30%, rgb(1, 1, 73), black);
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.faixa-centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-assinatura {
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+.saiba-mais {
+    color: rgb(50, 151, 247);
+}
+
+.tv-container {
+    height: 35em;
+    width: 100%;
+    border-bottom: 10px solid #3f3f3f;
+    display: flex;
+}
+
+.texto-tv {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 18em;
+}
+
+.aproveite-tv {
+    font-size: 45px;
+    font-weight: bold;
+    font-weight: bolder;
+}
+
+.tv-imagem {
+    width: 280px;
+    height: 80px;
+    z-index: 1;
+}
+
+.background-tv-video {
+    width: 480px;
+    height: 290px;
+    z-index: 0;
 }
